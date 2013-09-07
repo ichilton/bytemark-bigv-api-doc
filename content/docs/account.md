@@ -1,7 +1,0 @@
----
-title: 'Account'
----
-
-# Account
-
-
