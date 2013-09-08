@@ -8,7 +8,7 @@ title: 'Definitions'
 
 This call gives general information about the platform, like available distributions, hardware profiles and storage grades.
 
-This call does not require authentication.
+This call does not require authentication and is read only.
 
 
 ## Fields
