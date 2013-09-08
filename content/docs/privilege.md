@@ -1,6 +1,0 @@
----
-title: 'Privilege'
----
-
-# Privilege
-
