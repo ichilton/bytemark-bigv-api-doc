@@ -38,10 +38,24 @@ a:hover {
   line-height: 40px;
 
   letter-spacing: -1px;
+
+  margin: 20px 0px 20px 0px;
+}
+
+#main h2 {
+  margin: 30px 0px 20px 0px;
+}
+
+#main h3 {
+  margin: 20px 0px 20px 0px;
+}
+
+#main h4 {
+  margin: 20px 0px 20px 0px;
 }
 
 #main p {
-  margin: 20px 0;
+  margin: 15px 0;
 
   font-size: 15px;
 
@@ -60,6 +74,27 @@ a:hover {
 
 #main ul li {
   list-style-type: square;
+}
+
+#main pre {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px 6px 10px;
+  border-radius: 3px;
+}
+
+#main code {
+  font-family: inherit;
+  font-size: inherit;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 #sidebar {
@@ -91,7 +126,7 @@ a:hover {
 #sidebar ul {
   list-style-type: none;
 
-  margin: 20px 0;
+  margin: 5px 0px 20px 0px;
 }
 
 #sidebar li {
