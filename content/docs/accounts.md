@@ -8,6 +8,9 @@ title: 'Accounts'
 
 A BigV account contains a set of groups, and each group contains a set of virtual machines. An account collects servers together for billing purposes, and BigV issues invoices a monthin advance.
 
+More information about BigV Accounts can be found here: [http://www.bigv.io/support/howto/account/](http://www.bigv.io/support/howto/account/)
+
+
 ## Fields
 
 * id - Unique key (integer)
