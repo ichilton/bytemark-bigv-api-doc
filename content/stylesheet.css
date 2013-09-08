@@ -47,11 +47,15 @@ a:hover {
 }
 
 #main h3 {
-  margin: 20px 0px 20px 0px;
+  margin: 30px 0px 20px 0px;
 }
 
 #main h4 {
-  margin: 20px 0px 20px 0px;
+  margin: 30px 0px 20px 0px;
+}
+
+#main h5 {
+  margin: 20px 0px 10px 0px;
 }
 
 #main p {
