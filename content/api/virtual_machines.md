@@ -12,14 +12,16 @@ Todo
 
 ## Endpoints
 
-* POST   /accounts/:id/groups/:id/virtual_machines     - create a new VM
-* GET    /accounts/:id/groups/:id/virtual_machines     - list of VMs
-* GET    /accounts/:id/groups/:id/virtual_machines/:id - details of existing VM
-* PUT    /accounts/:id/groups/:id/virtual_machines/:id - update existing VM
-* DELETE /accounts/:id/groups/:id/virtual_machines/:id - delete VM
+    POST   /accounts/ACC_ID/groups/GROUP_ID/virtual_machines     - create a new VM
+    GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines     - list of VMs
+    GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/ID  - details of existing VM
+    PUT    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/ID  - update existing VM
+    DELETE /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/ID  - delete VM
 
-* POST   /accounts/:id/groups/:id/virtual_machines/:id/reimage - reimage a VM
-* POST   /accounts/:id/groups/:id/virtual_machines/:id/signal  - signal a VM
+    POST   /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/ID/reimage  - reimage a VM
+    POST   /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/ID/signal   - signal a VM
+
+Replace ACC_ID with the account id or name, GROUP_ID with the group id (or default) and ID with the id of the virtual machine.
 
 
 ## Attributes

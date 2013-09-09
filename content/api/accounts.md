@@ -15,11 +15,13 @@ More information about BigV Accounts can be found here: [http://www.bigv.io/supp
 
 ## Endpoints
 
-* POST   /accounts     - create a new account
-* GET    /accounts     - list of accounts
-* GET    /accounts/:id - details of existing account
-* PUT    /accounts/:id - update existing account
-* DELETE /accounts/:id - delete account (fails if account not empty)
+    POST   /accounts     - create a new account
+    GET    /accounts     - list of accounts
+    GET    /accounts/ID  - details of existing account
+    PUT    /accounts/ID  - update existing account
+    DELETE /accounts/ID  - delete account (fails if account not empty)
+
+Replace ID with the account id or name.
 
 
 ## Attributes

@@ -16,14 +16,14 @@ More information about BigV Privileges can be found here: [http://www.bigv.io/su
 
 ## Endpoints
 
-* POST   /users/USER_ID/privileges     - add a privilege to a user
-* GET    /users/USER_ID/privileges     - view details of a user's privileges
-* GET    /privileges     - view details of all the privileges a user can see
-* GET    /privileges/PRIV_ID - view details of a single privilege
-* PUT    /privileges/PRIV_ID - update details of a privilege
-* DELETE /privileges/PRIV_ID - remove a privilege
+    POST   /users/USER_ID/privileges   - add a privilege to a user
+    GET    /users/USER_ID/privileges   - view details of a user's privileges
+    GET    /privileges                 - view details of all the privileges a user can see
+    GET    /privileges/ID              - view details of a single privilege
+    PUT    /privileges/ID              - update details of a privilege
+    DELETE /privileges/ID              - remove a privilege
 
-USER_ID should be replaced with a user id or username.
+USER_ID should be replaced with a user id or username and ID with the privilege id.
 
 
 ## Attributes

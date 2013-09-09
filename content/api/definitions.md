@@ -11,7 +11,12 @@ This call gives general information about the platform, like available distribut
 This call does not require authentication and is read only.
 
 
-## Fields
+## Endpoints
+
+    GET /definitions
+
+
+## Attributes
 
 Each set of information contains a text id field and a data field containing an array.
 
@@ -25,6 +30,7 @@ The id's are as follows:
 
 
 ## Sections
+
 
 ### Distributions
 

@@ -16,11 +16,13 @@ More information about BigV Groups can be found here: [http://www.bigv.io/suppor
 
 ## Endpoints
 
-* POST   /accounts/:id/groups     - create a new group
-* GET    /accounts/:id/groups     - list of groups
-* GET    /accounts/:id/groups/:id - details of existing group
-* PUT    /accounts/:id/groups/:id - update existing account
-* DELETE /accounts/:id/groups/:id - delete group (fails if group not empty)
+    POST   /accounts/ACC_ID/groups     - create a new group
+    GET    /accounts/ACC_ID/groups     - list of groups
+    GET    /accounts/ACC_ID/groups/ID  - details of existing group
+    PUT    /accounts/ACC_ID/groups/ID  - update existing account
+    DELETE /accounts/ACC_ID/groups/ID  - delete group (fails if group not empty)
+
+Replace ACC_ID with the account id or name and ID with the group id.
 
 
 ## Attributes

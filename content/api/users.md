@@ -15,13 +15,13 @@ More information about BigV users can be found here: [http://www.bigv.io/support
 
 ## Endpoints
 
-* POST   /users     - create a new user (no authentication required)
-* GET    /users     - view all the users related to the current user
-* GET    /users/USER_ID   - view details of the specified user
-* PUT    /users/USER_ID   - update details about the specified user
-* DELETE /users/USER_ID   - deletes the specified user
+    POST   /users      - create a new user (no authentication required)
+    GET    /users      - view all the users related to the current user
+    GET    /users/ID   - view details of the specified user
+    PUT    /users/ID   - update details about the specified user
+    DELETE /users/ID   - deletes the specified user
 
-USER_ID should be replaced with a user id or username.
+ID should be replaced with a user id or username.
 
 
 ## Attributes
