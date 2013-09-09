@@ -11,7 +11,9 @@ The API is a RESTful and therefore the type of HTTP request determines the actio
  - PUT - Update an existing entry
  - DELETE - Delete an entry
 
-If you are using curl, you can specify the method with the -X parameter, eg: -X POST
+If you are using curl, you can specify the method with the -X parameter, eg: -X POST, -X PUT and -X DELETE.
+
+See the examples in each section for more information about this.
 
 
 ## Data Format
@@ -41,6 +43,8 @@ Yubikeys are sent as a HTTP header: X-Yubikey-Otp: <output of keypress>
 The privilege model determines how long a particular yubikey will be
 accepted for; by default, you can replay the same OTP over and over for
 15 minutes before it is invalidated.
+
+If you are using a user who's privileges do not require a Yubikey, you can ignore this header - it doesn't need to be supplied. In fact, if it is, it will be ignored if it's not required.
 
 
 ## Accounts, Users, Privileges and Groups
