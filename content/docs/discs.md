@@ -1,7 +1,7 @@
 ---
-title: 'Disc'
+title: 'Discs'
 ---
 
-# Disc
+# Discs
 
-
+Coming Soon
