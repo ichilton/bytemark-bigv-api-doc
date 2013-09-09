@@ -4,6 +4,7 @@ title: 'Privileges'
 
 # Privileges (Work In Progress)
 
+
 ## Introduction
 
 Privileges define if (and under what conditions) a user can access either an account, a group or a virtual machine. For example, a user could be an account admin for an account under the same name, if they know their password and have a yubikey - or know their password and are coming from a certain ip address. The same user could also be the account admin for a different account if they know their password and have a yubikey. They could then be allowed to access a certain group of machines from another account just by providing their password.
@@ -13,7 +14,19 @@ To understand how this fits with accounts, groups and users, see the "Accounts, 
 More information about BigV Privileges can be found here: [http://www.bigv.io/support/howto/privilege/](http://www.bigv.io/support/howto/privilege/)
 
 
-## Fields
+## Endpoints
+
+* POST   /users/USER_ID/privileges     - add a privilege to a user
+* GET    /users/USER_ID/privileges     - view details of a user's privileges
+* GET    /privileges     - view details of all the privileges a user can see
+* GET    /privileges/PRIV_ID - view details of a single privilege
+* PUT    /privileges/PRIV_ID - update details of a privilege
+* DELETE /privileges/PRIV_ID - remove a privilege
+
+USER_ID should be replaced with a user id or username.
+
+
+## Attributes
 
 * id
 * username
@@ -25,6 +38,7 @@ More information about BigV Privileges can be found here: [http://www.bigv.io/su
 * virtual_machine_id
 * group_id
 * account_id
+
 
 ## Examples
 

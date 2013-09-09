@@ -4,13 +4,28 @@ title: 'Virtual Machines'
 
 # Virtual Machines (Work In Progress)
 
+
 ## Introduction
 
 Todo
 
-## Fields
+
+## Endpoints
+
+* POST   /accounts/:id/groups/:id/virtual_machines     - create a new VM
+* GET    /accounts/:id/groups/:id/virtual_machines     - list of VMs
+* GET    /accounts/:id/groups/:id/virtual_machines/:id - details of existing VM
+* PUT    /accounts/:id/groups/:id/virtual_machines/:id - update existing VM
+* DELETE /accounts/:id/groups/:id/virtual_machines/:id - delete VM
+
+* POST   /accounts/:id/groups/:id/virtual_machines/:id/reimage - reimage a VM
+* POST   /accounts/:id/groups/:id/virtual_machines/:id/signal  - signal a VM
+
+
+## Attributes
 
 Todo
+
 
 ## Examples
 

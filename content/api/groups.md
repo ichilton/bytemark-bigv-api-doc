@@ -12,3 +12,22 @@ Groups are quite simply a collection of virtual machines. By default, each accou
 To understand how this fits with accounts, users and privileges, see the "Accounts, Users, Privileges and Groups" section on [the intro page](/notes/intro).
 
 More information about BigV Groups can be found here: [http://www.bigv.io/support/howto/group/](http://www.bigv.io/support/howto/group/)
+
+
+## Endpoints
+
+* POST   /accounts/:id/groups     - create a new group
+* GET    /accounts/:id/groups     - list of groups
+* GET    /accounts/:id/groups/:id - details of existing group
+* PUT    /accounts/:id/groups/:id - update existing account
+* DELETE /accounts/:id/groups/:id - delete group (fails if group not empty)
+
+
+## Attributes
+
+Todo
+
+
+## Examples
+
+Todo

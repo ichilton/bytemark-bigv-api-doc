@@ -13,7 +13,16 @@ To understand how this fits with groups, users and privileges, see the "Accounts
 More information about BigV Accounts can be found here: [http://www.bigv.io/support/howto/account/](http://www.bigv.io/support/howto/account/)
 
 
-## Fields
+## Endpoints
+
+* POST   /accounts     - create a new account
+* GET    /accounts     - list of accounts
+* GET    /accounts/:id - details of existing account
+* PUT    /accounts/:id - update existing account
+* DELETE /accounts/:id - delete account (fails if account not empty)
+
+
+## Attributes
 
 * id - Unique key (integer)
 
