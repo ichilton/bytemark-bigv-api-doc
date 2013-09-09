@@ -8,7 +8,7 @@ title: 'Users'
 
 Users generally relate to physical people. Each person who needs to access BigV will generally have a single user. Users can be granted access to multiple accounts.
 
-To understand how this fits with accounts, groups and privileges, see the "Accounts, Users, Privileges and Groups" section on [the intro page](/docs/intro).
+To understand how this fits with accounts, groups and privileges, see the "Accounts, Users, Privileges and Groups" section on [the intro page](/notes/intro).
 
 More information about BigV users can be found here: [http://www.bigv.io/support/howto/user/](http://www.bigv.io/support/howto/user/)
 
