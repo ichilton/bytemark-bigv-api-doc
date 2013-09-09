@@ -6,7 +6,9 @@ title: 'Accounts'
 
 ## Introduction 
 
-A BigV account contains a set of groups, and each group contains a set of virtual machines. An account collects servers together for billing purposes, and BigV issues invoices a monthin advance.
+Accounts are a billable entity. Accounts would generally relate to a company, organisation, or maybe a persion. An account can be accessed by multiple users (eg: employees) and a user can access multiple accounts (so the same user could for example, access the accounts of multiple companies and/or have a personal account). Accounts contain groups and virtual machines.
+
+To understand how this fits with groups, users and privileges, see the "Accounts, Users, Privileges and Groups" section on [the intro page](/docs/intro).
 
 More information about BigV Accounts can be found here: [http://www.bigv.io/support/howto/account/](http://www.bigv.io/support/howto/account/)
 
