@@ -12,11 +12,11 @@ Todo
 
 ## Endpoints
 
-    POST   /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics     - create a new network interface
-    GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics     - list of NICs
-    GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID  - details of existing NIC
-    PUT    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID  - update existing NIC
-    DELETE /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID  - delete NIC
+    GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics    # all
+    GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID # nic
+    POST   /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics    # create
+    PUT    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID # update
+    DELETE /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID # delete
 
 Replace ACC_ID with the account id or name, GROUP_ID with the group id (or default), VM_ID with the id of the virtual machine and ID with the nic id.
 

@@ -28,7 +28,9 @@ a:hover {
   top: 40px;
   left: 280px;
 
-  # width: 500px;
+  padding-bottom: 30px;
+
+  width: 600px;
 }
 
 #main h1 {
@@ -89,6 +91,8 @@ a:hover {
   overflow: auto;
   padding: 6px 10px 6px 10px;
   border-radius: 3px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 #main code {

@@ -15,13 +15,15 @@ More information about BigV Accounts can be found here: [http://www.bigv.io/supp
 
 ## Endpoints
 
-    POST   /accounts     - create a new account
-    GET    /accounts     - list of accounts
-    GET    /accounts/ID  - details of existing account
-    PUT    /accounts/ID  - update existing account
-    DELETE /accounts/ID  - delete account (fails if account not empty)
+    GET    /accounts      # all accounts
+    GET    /accounts/ID   # single account
+    POST   /accounts      # create
+    PUT    /accounts/ID   # update
+    DELETE /accounts/ID   # delete
 
 Replace ID with the account id or name.
+
+Account names can not be updated once created. Accounts can only be deleted by a user with higher permissions than the user it was created with (which may mean that currently you can't delete accounts you have created).
 
 
 ## Attributes
