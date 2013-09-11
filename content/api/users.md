@@ -41,7 +41,7 @@ ID should be replaced with a user id or username.
 
     GET /users
 
-#### Curl:
+##### Curl:
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
@@ -59,7 +59,7 @@ ID should be replaced with a user id or username.
 
     GET /users/myusername
 
-#### Curl:
+##### Curl:
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
