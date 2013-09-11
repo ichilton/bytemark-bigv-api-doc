@@ -26,21 +26,21 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id (or defau
 
 ## Attributes
 
-* autoreboot_on
-* cdrom_url
-* cores
-* group_id
-* id
-* management_address
-* memory
-* name
-* power_on
-* keymap
-* deleted
-* hostname
-* head
-* hardware_profile
-* hardware_profile_locked
+* **id** - unique key (integer).
+* **autoreboot_on** - boolean specifying whether the machine will automatically turn back on on shutdown/reboot.
+* **cdrom_url** - url of an iso to expose to the vm as a cd drive.
+* **cores** - number of cpu cores available.
+* **group_id** - id of the group this vm belongs to.
+* **management_address** - tbc.
+* **memory** - amount of memory, in megabytes.
+* **name** - name of the virtual machine.
+* **power_on** - boolean specifying whether the machine is turned on.
+* **keymap**
+* **deleted** - boolean specifying whether the machine has been deleted.
+* **hostname** - bigv hostname for the machine.
+* **head** - location of the vm on bytemark's host machines (heads).
+* **hardware_profile** - which hardware profile is being used (see the [definitions page](/api/definitions))
+* **hardware_profile_locked** - whether the hardware profile is locked and thefore will not be auto upgraded.
 
 
 ## Examples

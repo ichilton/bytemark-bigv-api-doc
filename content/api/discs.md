@@ -33,12 +33,12 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id or name (
 
 ## Attributes
 
-* id
-* label
-* size
-* virtual_machine_id
-* storage_pool
-* storage_grade
+* **id** - unique key (integer).
+* **label** - unix device label.
+* **size** - size in bytes.
+* **virtual_machine_id** - id of the vm it's attached to.
+* **storage_pool** - location of the drive on BigV's storage servers (tails).
+* **storage_grade** - device type, eg: sata, sas, ssd or archive.
 
 
 ## Examples

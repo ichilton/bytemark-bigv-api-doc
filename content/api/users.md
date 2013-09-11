@@ -26,11 +26,11 @@ ID should be replaced with a user id or username.
 
 ## Attributes
 
-* id - Unique id for this user (numeric)
-* username - Unique username for this user - must only contain letters or numbers
-* email - User's e-mail address
-* authorized_keys - SSH public key's
-* password - only used when creating (or updating) a user - it's not returned in when reading users
+* **id** - Unique id for this user (numeric)
+* **username** - Unique username for this user - must only contain letters or numbers
+* **email** - User's e-mail address
+* **authorized_keys** - SSH public key's
+* **password** - only used when creating (or updating) a user - it's not returned in when reading users
 
 
 ## Examples

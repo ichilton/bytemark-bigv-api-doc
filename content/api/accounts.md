@@ -28,11 +28,11 @@ Account names can not be updated once created. Accounts can only be deleted by a
 
 ## Attributes
 
-* id - Unique key (integer)
+* **id** - Unique key (integer).
 
-* name - Account name (string)
+* **name** - Account name (string).
 
-* suspended - Flag to indicate the account has been suspended (boolean - true/false)
+* **suspended** - Flag to indicate the account has been suspended (boolean - true/false).
 
 
 ## Parameters

@@ -29,9 +29,9 @@ Deletes will fail if the group is not empty (i.e has virtual machines in it).
 
 ## Attributes
 
-* account_id
-* id
-* name
+* **id** - unique key (integer).
+* **account_id** - id of the account this group belongs to.
+* **name** - group name.
 
 
 ## Examples

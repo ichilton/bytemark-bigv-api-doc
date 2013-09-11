@@ -23,13 +23,13 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id (or defau
 
 ## Attributes
 
-* id
-* label
-* ips
-* vlan_num
-* mac
-* extra_ips
-* virtual_machine_id
+* **id** - unique key (integer).
+* **label** - unique device name.
+* **ips** - list of ip's assigned to the interface (ipv4 and ipv6).
+* **vlan_num** - maps to a bytemark vlan (contact support for vlan setup)
+* **mac - mac** address for the interface.
+* **extra_ips** - additional ip's (aliases).
+* **virtual_machine_id** - id of the virtual machine the nic is linked to.
 
 
 ## Examples

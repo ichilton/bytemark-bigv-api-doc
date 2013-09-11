@@ -29,16 +29,19 @@ USER_ID should be replaced with a user id or username and ID with the privilege 
 
 ## Attributes
 
-* id
-* username
-* level
-* creating_username
-* yubikey_required
-* yubikey_otp_max_age
-* ip_restrictions
-* virtual_machine_id
-* group_id
-* account_id
+* **id** - unique key (integer).
+* **username** - username this privilege is for.
+* **level** - the level of privilege (eg: account_admin). Todo: confirm other valid values
+* **creating_username** - username of the user who created this user.
+* **yubikey_required** - boolean specifying whether a yubikey is required for access.
+* **yubikey_otp_max_age** - how long the yubikey value will be accepted for (in seconds).
+* **ip_restrictions** - whether the user has to be accessing from certain ip addresses to have this privilege.
+
+One of the following:
+
+* **virtual_machine_id**
+* **group_id**
+* **account_id**
 
 
 ## Examples

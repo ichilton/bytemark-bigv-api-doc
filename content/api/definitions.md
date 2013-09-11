@@ -36,25 +36,25 @@ The id's are as follows:
 
 The operating systems / distributions available to install on new VM's
 
-* centos-5.8 - Centos 5.8
-* centos-6.3 - Centos 6.3
-* oneiric - Ubuntu 12.04 (precise)
-* precise - Ubuntu 12.04 (precise)
-* squeeze - Debian 6.0 (squeeze)
-* symbiosis - Bytemark Symbiosis (based on Debian/squeeze - see [http://symbiosis.bytemark.co.uk](http://symbiosis.bytemark.co.uk])
-* wheezy - Debian 7.0 (wheezy)
-* winweb2k8r2 - Windows Server 2008r2
-* winstd2012 - Windows Server 2012
+* **centos-5.8** - Centos 5.8
+* **centos-6.3** - Centos 6.3
+* **oneiric** - Ubuntu 12.04 (precise)
+* **precise** - Ubuntu 12.04 (precise)
+* **squeeze** - Debian 6.0 (squeeze)
+* **symbiosis** - Bytemark Symbiosis (based on Debian/squeeze - see [http://symbiosis.bytemark.co.uk](http://symbiosis.bytemark.co.uk])
+* **wheezy** - Debian 7.0 (wheezy)
+* **winweb2k8r2** - Windows Server 2008r2
+* **winstd2012** - Windows Server 2012
 
 
 ### Storage Grades
 
 Several different storage grades are provided to cater for different price vs performance requirements.
 
-* archive - Cheapest storage - great for low performance requirements.
-* sata - Medium grade discs - default for new vm's
-* sas - Higher grade storage - ideal for more demanding tasks such as database access
-* ssd - Fastest, solid state storage, SSD-backed
+* **archive** - Cheapest storage - great for low performance requirements.
+* **sata** - Medium grade discs - default for new vm's
+* **sas** - Higher grade storage - ideal for more demanding tasks such as database access
+* **ssd** - Fastest, solid state storage, SSD-backed
 
 Note VM's with the the older compatibility2011 hardware profile (see below) might not see much benefit when using SSD's, over SAS due to the comparatively inefficient storage driver.
 
@@ -63,10 +63,10 @@ Note VM's with the the older compatibility2011 hardware profile (see below) migh
 
 Several different hardware profiles are provided for different different performance vs backwards compatibility requirements.
 
-* compatibility2011 - Older QEmu version
-* compatibility2013 - Newer QEmu version - will not (currently) be auto upgraded
-* virtio2011 - Will be upgraded to virtio2013 on restart
-* virtio2013 - Faster, newer version of QEmu - may be auto-upgraded in future
+* **compatibility2011** - Older QEmu version
+* **compatibility2013** - Newer QEmu version - will not (currently) be auto upgraded
+* **virtio2011** - Will be upgraded to virtio2013 on restart
+* **virtio2013** - Faster, newer version of QEmu - may be auto-upgraded in future
 
 For consistent behaviour between reboots, choose one of the compatibility options. The virtio profiles
 (virtio2013 for example) can be used if you'd prefer to be upgraded automatically on shutdown/restart
