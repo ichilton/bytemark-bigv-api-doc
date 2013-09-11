@@ -2,7 +2,7 @@
 title: 'Privileges'
 ---
 
-# Privileges (Work In Progress)
+# Privileges
 
 
 ## Introduction
@@ -15,7 +15,6 @@ More information about BigV Privileges can be found here: [http://www.bigv.io/su
 
 
 ## Endpoints
-
 
     GET    /privileges     # all privileges (for current user)
     GET    /privileges/ID  # single privilege
@@ -44,11 +43,20 @@ USER_ID should be replaced with a user id or username and ID with the privilege 
 
 ## Examples
 
+#### All NICs on a VM
+
+##### Request:
+
+    GET /users/myusername/privileges
+
+##### Curl:
+
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
          -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/users/myusername/privileges
 
+##### Response:
 
     [{"id":1,"level":"account_admin","yubikey_required":true,"yubikey_otp_max_age":900,"ip_restrictions":null,"username":"myusername","_links":{"self":{"href":"/privileges/25"},"user":{"href":"/users/25"},"account":{"href":"/accounts/24","title":"Account myaccountname"}},"account_id":1},{"id":5273,"level":"account_admin","yubikey_required":true,"yubikey_otp_max_age":900,"ip_restrictions":null,"username":"myusername","_links":{"self":{"href":"/privileges/5273"},"user":{"href":"/users/25"},"account":{"href":"/accounts/5114","title":"Account myotheraccount"}},"account_id":2}]
