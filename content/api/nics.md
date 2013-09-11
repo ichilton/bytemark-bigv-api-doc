@@ -2,12 +2,12 @@
 title: 'NICs'
 ---
 
-# NICs (Work In Progress)
+# NICs
 
 
 ## Introduction
 
-Todo
+The nics interface allows you to configure the network interfaces on a virtual machine.
 
 
 ## Endpoints
@@ -23,9 +23,31 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id (or defau
 
 ## Attributes
 
-Todo
+* id
+* label
+* ips
+* vlan_num
+* mac
+* extra_ips
+* virtual_machine_id
 
 
 ## Examples
 
-Todo
+#### All NICs on a VM
+
+##### Request:
+
+    GET /accounts/myaccountname/groups/default/virtual_machines/1234/discs
+
+##### Curl:
+
+    curl -H "Content-type: application/json" \
+         -H "X-Yubikey-Otp: output_from_key_here" \
+         -sslv3 \
+         -u username_here:password_here \
+         https://uk0.bigv.io/accounts/myaccountname/groups/default/virtual_machines/1234/nics
+
+##### Response:
+
+    [{"id":1,"label":null,"ips":["213.123.123.123","2001:1234:1:1:ffff:ff:ff:f12f"],"vlan_num":1,"mac":"fe:ff:00:ff:ff:ff","extra_ips":{},"virtual_machine_id":1234}]
