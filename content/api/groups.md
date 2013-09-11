@@ -2,7 +2,7 @@
 title: 'Groups'
 ---
 
-# Groups (Work In Progress)
+# Groups
 
 
 ## Introduction
@@ -22,16 +22,54 @@ More information about BigV Groups can be found here: [http://www.bigv.io/suppor
     PUT    /accounts/ACC_ID/groups/ID  # update
     DELETE /accounts/ACC_ID/groups/ID  # delete
 
-Replace ACC_ID with the account id or name and ID with the group id.
+Replace ACC_ID with the account id or name and ID with the group id or name.
 
 Deletes will fail if the group is not empty (i.e has virtual machines in it).
 
 
 ## Attributes
 
-Todo
+* account_id
+* id
+* name
 
 
 ## Examples
 
-Todo
+#### All Groups
+
+##### Request:
+
+    GET /accounts/myaccountname/groups/
+
+##### Curl:
+
+    curl -H "Content-type: application/json" \
+         -H "X-Yubikey-Otp: output_from_key_here" \
+         -sslv3 \
+         -u username_here:password_here \
+         https://uk0.bigv.io/accounts/myaccountname/groups
+
+##### Response:
+
+    [{"account_id":1,"id":1,"name":"default"}]
+
+
+#### Single Group
+
+##### Request:
+
+    GET /accounts/myaccountname/groups/1
+
+##### Curl:
+
+    curl -H "Content-type: application/json" \
+         -H "X-Yubikey-Otp: output_from_key_here" \
+         -sslv3 \
+         -u username_here:password_here \
+         https://uk0.bigv.io/accounts/myaccountname/groups/1
+
+##### Response:
+
+    {"account_id":1,"id":1,"name":"default"}
+
