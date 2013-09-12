@@ -23,6 +23,8 @@ I don't think virtual machines require any explaination, as that's why you are u
 
 Replace ACC_ID with the account id or name, GROUP_ID with the group id (or default) and ID with the id of the virtual machine.
 
+The rules for what can be changed on a running vm are currently complex - the simple advice is to power down a machine before making changes to an existing vm.
+
 
 ## Attributes
 
@@ -31,7 +33,7 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id (or defau
 * **cdrom_url** - url of an iso to expose to the vm as a cd drive.
 * **cores** - number of cpu cores available.
 * **group_id** - id of the group this vm belongs to.
-* **management_address** - tbc.
+* **management_address** - ssh'ing to this ip will allow (out-of-band) access to the virtual machine using it's console. If the vm is not responding or you are locked out for some reason, this is very useful!
 * **memory** - amount of memory, in megabytes.
 * **name** - name of the virtual machine.
 * **power_on** - boolean specifying whether the machine is turned on.
@@ -41,6 +43,17 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id (or defau
 * **head** - location of the vm on bytemark's host machines (heads).
 * **hardware_profile** - which hardware profile is being used (see the [definitions page](/api/definitions))
 * **hardware_profile_locked** - whether the hardware profile is locked and thefore will not be auto upgraded.
+
+
+## Parameters
+
+If you would like to see deleted VM's (i.e VM's where the deleted field is set to true), you need to pass: the include_deleted=true paramter through in the query string, eg:
+
+    GET /accounts/myaccountname/groups/default/virtual_machines?include_deleted=true
+
+or if you are using the overview parameter in accounts:
+
+    GET /accounts?view=overview&include_deleted=true
 
 
 ## Examples

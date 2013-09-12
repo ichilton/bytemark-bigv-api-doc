@@ -17,8 +17,13 @@ The nics interface allows you to configure the network interfaces on a virtual m
     POST   /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics    # create
     PUT    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID # update
     DELETE /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID # delete
+    POST /accounts/1/groups/1/virtual_machines/1/nics/1/ip_create  # add an ip address
 
 Replace ACC_ID with the account id or name, GROUP_ID with the group id (or default), VM_ID with the id of the virtual machine and ID with the nic id.
+
+The rules for what can be changed on a running vm are currently complex - the simple advice is to power down a machine before making changes to nics.
+
+Note that NICs can not be changed while the VM they're assigned to is deleted.
 
 
 ## Attributes

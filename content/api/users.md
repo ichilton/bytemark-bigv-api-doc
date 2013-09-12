@@ -33,6 +33,13 @@ ID should be replaced with a user id or username.
 * **password** - only used when creating (or updating) a user - it's not returned in when reading users
 
 
+## Authentication
+
+Users can be created (using POST) without authentication.
+
+If the request has no authentication, it will also accept an account_name parameter and create an account at the same time.
+
+
 ## Examples
 
 #### All Users
@@ -72,7 +79,7 @@ ID should be replaced with a user id or username.
     {"id":1,"username":"myusername","email":"me@mydomain.com","authorized_keys":"ssh-rsa AAAAsdjkhfkshfkjshdfkhjsdfkjhdskjfhsdkjhfiusdfyiusdyfiydsuifysduiyfiusdyfidsyfiusydifuysdiufyiudsyfisduyfiudsyfuisdhfkjsdnkjhaskjdhkashdkjashdkasndaisudyasudyisadhjnasjdnkjsandkjasndkjanskdnaskndkasjd== me@myhost.com\n\n"}
 
 
-#### Create New Account:
+#### Create New User:
 
 ##### Request:
 

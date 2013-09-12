@@ -19,6 +19,9 @@ Each storage grade is priced differently.
 
 The currently available storage grades are defined in the [definitions call](/api/definitions).
 
+The rules for what can be changed on a running vm are currently complex - the simple advice is to power down a machine before making changes to discs.
+
+Note that discs can not be changed while the VM they're assigned to is deleted.
 
 ## Endpoints
 
