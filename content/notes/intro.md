@@ -15,6 +15,8 @@ If you are using curl, you can specify the method with the -X parameter, eg: -X 
 
 See the examples in each section for more information about this.
 
+It's also worth noting that PUT effectively works like PATCH - it will only update the fields supplied instead of the whole record.
+
 
 ## Data Format
 
