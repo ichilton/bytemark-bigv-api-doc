@@ -101,3 +101,21 @@ or
     {"id":2,"name":"mynewaccountname","suspended":false}
 
 
+#### Account Overview:
+
+##### Request:
+
+    GET /accounts?view=overview
+
+##### Curl:
+
+curl -H "Content-type: application/json" \
+     -H "X-Yubikey-Otp: output_from_key_here" \
+     -sslv3 \
+     -u username_here:password_here \
+     https://uk0.bigv.io/accounts/myaccountname?view=overview
+
+
+##### Response:
+
+{"id"=>123, "name"=>"myaccountname", "suspended"=>false, "groups"=>[{"type"=>"application/vnd.bigv.group", "account_id"=>123, "id"=>123, "name"=>"default", "virtual_machines"=>[{"type"=>"application/vnd.bigv.virtual-machine", "autoreboot_on"=>false, "cdrom_url"=>nil, "cores"=>1, "group_id"=>123, "id"=>1234, "management_address"=>"213.123.123.123", "memory"=>1024, "name"=>"my_vm", "power_on"=>false, "keymap"=>nil, "deleted"=>false, "hostname"=>"myvm.default.myaccountname.uk0.bigv.io", "head"=>nil, "hardware_profile"=>"virtio2013", "hardware_profile_locked"=>false, "discs"=>[{"type"=>"application/vnd.bigv.disc", "id"=>1234, "label"=>"vda", "size"=>25600, "virtual_machine_id"=>1234, "storage_pool"=>"tail1-sata1", "storage_grade"=>"sata"}], "network_interfaces"=>[{"type"=>"application/vnd.bigv.network-interface", "id"=>1234, "label"=>nil, "ips"=>["213.123.123.12", "2001:1abc:12:123:ffff:ff:ffff:ff00"], "vlan_num"=>1, "mac"=>"ff:ff:00:00:00:00", "extra_ips"=>{}, "virtual_machine_id"=>1234}]}}
