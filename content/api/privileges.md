@@ -46,7 +46,7 @@ One of the following:
 
 ## Examples
 
-#### All NICs on a VM
+#### All privileges for a user
 
 ##### Request:
 
