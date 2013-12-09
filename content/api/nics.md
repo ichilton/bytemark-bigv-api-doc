@@ -43,7 +43,7 @@ Note that NICs can not be changed while the VM they're assigned to is deleted.
 
 ##### Request:
 
-    GET /accounts/myaccountname/groups/default/virtual_machines/1234/discs
+    GET /accounts/myaccountname/groups/default/virtual_machines/1234/nics
 
 ##### Curl:
 
