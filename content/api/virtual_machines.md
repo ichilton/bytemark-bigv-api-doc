@@ -60,7 +60,7 @@ or if you are using the overview parameter in accounts:
 
 ## Account Overview
 
-The account overview endpoint includes all virtual machines under the account, and includes their discs and nics. See the [account page](/api/accounts) for more information and an example.
+The account overview endpoint includes all virtual machines under the account, and includes their discs and nics. See the [accounts page](/api/accounts) for more information and an example.
 
 
 ## Reimage
@@ -101,7 +101,7 @@ The following parameters are accepted:
 
 * **data** - only valid if the signal is 'sendkey'. A dash-separated list of keys to press, eg: 'a-b-c-ctrl-alt-del'
 
-The valid sendkeys can be found using the GET /definitions call ([see the definitions page]](/api/definitions)).
+The valid sendkeys can be found using the GET /definitions call (See the [definitions page](/api/definitions)).
 
 reset and powerdown are the ACPI signals of the same name.
 
@@ -112,11 +112,13 @@ A virtual machine can be created by using POST /accounts/ACC_ID/groups/GROUP_ID/
 
 To reduce calls, a transactional version of POST virtual_machines, POST discs and POST reimage are provided in a single call.
 
-It takes a hash like {
-  "reimage" => { ... },
-  "discs"   => [{ ... }, { ... } ],
-  "virtual_machine" => { ... }
-}
+It takes a hash like:
+
+    {
+      "virtual_machine" => { ... },
+      "discs"   => [ { ... }, { ... } ],
+      "reimage" => { ... }
+    }
 
 The permitted attributes for each element are identical to the permitted attributes for creating a new VM or disc, or doing a reimage.
 
@@ -144,15 +146,16 @@ Therefore the following can be achieved:
     power_on = false
 
 ### Reboot:
+
     autoreboot_on = true
     power_on = false
 
 
 ## Return codes
 
-Most endpoints will block until complete and return 200 on success.
+Most endpoints will block until complete and return.
 
-The virtual machine creation calls will return 202 on success and will process the creation in the background so you need to poll and check the power_on attribute for when the machine has been powered on (if power_on was set to true when created.
+The virtual machine creation calls (POST into virtual_machines and vm_create) will return 202 on success and will process the creation in the background so you need to poll and check the power_on attribute for when the machine has been powered on (if power_on was set to true when created.
 
 
 ## Examples
