@@ -38,7 +38,7 @@ The operating systems / distributions available to install on new VM's
 
 * **centos-5.8** - Centos 5.8
 * **centos-6.3** - Centos 6.3
-* **oneiric** - Ubuntu 12.04 (precise)
+* **oneiric** - Ubuntu 11.10 (oneiric)
 * **precise** - Ubuntu 12.04 (precise)
 * **squeeze** - Debian 6.0 (squeeze)
 * **symbiosis** - Bytemark Symbiosis (based on Debian/squeeze - see [http://symbiosis.bytemark.co.uk](http://symbiosis.bytemark.co.uk])
