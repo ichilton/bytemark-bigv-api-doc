@@ -154,7 +154,7 @@ Therefore the following can be achieved:
 ## Deleting and Purging
 
 When a virtual machine is deleted using the DELETE endpoint, it still exists, but has it's deleted attribute set to true. This means it will be taken down and will only show 
-whent he include_deleted=true query string is used.
+when the include_deleted=true query string is used.
 
 However, it can be undeleted by setting deleted back to false for a certain amount of time after deletion (Bytemark haven't made public how long that will be).
 
