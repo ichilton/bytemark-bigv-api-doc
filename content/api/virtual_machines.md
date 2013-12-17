@@ -151,6 +151,18 @@ Therefore the following can be achieved:
     power_on = false
 
 
+## Deleting and Purging
+
+When a virtual machine is deleted using the DELETE endpoint, it still exists, but has it's deleted attribute set to true. This means it will be taken down and will only show 
+whent he include_deleted=true query string is used.
+
+However, it can be undeleted by setting deleted back to false for a certain amount of time after deletion (Bytemark haven't made public how long that will be).
+
+If you wish to purge a virtual machine - either a previously deleted one, or delete a live one and ensure it can't be undeleted, you can use the purge=true query string with the 
+DELETE endpoint. This will competely remove the server, put the IP address back into the
+pool and allow the name to be re-used.
+
+
 ## Return codes
 
 Most endpoints will block until complete and return.
