@@ -39,6 +39,11 @@ Note that NICs can not be changed while the VM they're assigned to is deleted.
 * **virtual_machine_id** - id of the virtual machine the nic is linked to.
 
 
+## Additional IP Addresses
+
+The ip_create endpoint (POST /accounts/1/groups/1/virtual_machines/1/nics/1/ip_create) can be used to add additional ip addresses to the VM. This currently only supports routing extra non-contiguous IPv4 addresses via that nic's primary ipv4 address.
+
+
 ## Examples
 
 #### All NICs on a VM
