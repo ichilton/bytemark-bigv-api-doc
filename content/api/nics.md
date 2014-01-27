@@ -43,6 +43,10 @@ Note that NICs can not be changed while the VM they're assigned to is deleted.
 
 The ip_create endpoint (POST /accounts/1/groups/1/virtual_machines/1/nics/1/ip_create) can be used to add additional ip addresses to the VM. This currently only supports routing extra non-contiguous IPv4 addresses via that nic's primary ipv4 address.
 
+There is an undisclosed limit on how many IP's can be assigned this way.
+
+There is also currently no way of returning the IP addresses, without contacting support.
+
 
 ## Examples
 
