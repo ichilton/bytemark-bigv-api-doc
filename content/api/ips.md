@@ -44,7 +44,6 @@ These are the attribute for /accounts/1/groups/1/virtual_machines/1/nics/1/ip_cr
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/ips/213.123.123.123
 
@@ -63,7 +62,6 @@ These are the attribute for /accounts/1/groups/1/virtual_machines/1/nics/1/ip_cr
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          -X PUT -d '{"rdns":"mynewhost.mydomain.com"}' \
          https://uk0.bigv.io/ips/213.123.123.123

@@ -57,7 +57,6 @@ This embeds other related information into the response to save making HTTP call
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts
 
@@ -90,7 +89,6 @@ or
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          -X POST \
          -d '{"name":"mynewaccountname"}' \
@@ -111,7 +109,6 @@ or
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts/myaccountname?view=overview
 

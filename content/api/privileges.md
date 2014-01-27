@@ -56,7 +56,6 @@ One of the following:
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/users/myusername/privileges
 

@@ -48,7 +48,6 @@ Deletes will fail if the group is not empty (i.e has virtual machines in it).
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts/myaccountname/groups
 
@@ -67,7 +66,6 @@ Deletes will fail if the group is not empty (i.e has virtual machines in it).
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts/myaccountname/groups/1
 

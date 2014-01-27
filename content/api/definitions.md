@@ -95,7 +95,6 @@ Used for defining how to send special keys for VNC/SSH.
 ##### Curl:
 
     curl -H "Content-type: application/json" \
-         -sslv3 \
          -X GET \
          https://uk0.bigv.io/definitions
 

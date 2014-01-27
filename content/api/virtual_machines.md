@@ -182,7 +182,6 @@ The virtual machine creation calls (POST into virtual_machines and vm_create) wi
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts/myaccountname/groups/default/virtual_machines
 
@@ -201,7 +200,6 @@ The virtual machine creation calls (POST into virtual_machines and vm_create) wi
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts/myaccountname/groups/default/virtual_machines/1234
 

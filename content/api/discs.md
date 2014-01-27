@@ -56,7 +56,6 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id or name (
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts/myaccountname/groups/default/virtual_machines/1234/discs
 
@@ -75,7 +74,6 @@ Replace ACC_ID with the account id or name, GROUP_ID with the group id or name (
 
     curl -H "Content-type: application/json" \
          -H "X-Yubikey-Otp: output_from_key_here" \
-         -sslv3 \
          -u username_here:password_here \
          https://uk0.bigv.io/accounts/myaccountname/groups/default/virtual_machines/1234/discs
 
