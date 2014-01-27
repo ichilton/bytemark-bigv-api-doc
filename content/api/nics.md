@@ -12,7 +12,7 @@ The nics interface allows you to configure the network interfaces on a virtual m
 
 ## Endpoints
 
-**NOTE** The POST, PUT and DELETE endpoints are currently disabled as this functionality has not yet been implemented on the BigV backend**
+**NOTE** The POST, PUT and DELETE endpoints are currently disabled as this functionality has not yet been implemented on the BigV backend.
 
     GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics    # all
     GET    /accounts/ACC_ID/groups/GROUP_ID/virtual_machines/VM_ID/nics/ID # nic
