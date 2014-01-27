@@ -105,6 +105,10 @@ The valid sendkeys can be found using the GET /definitions call (See the [defini
 
 reset and powerdown are the ACPI signals of the same name.
 
+**powerdown** is the same as pressing the soft power button on an ATX computer. This is operating system dependant, but would generally signal to the operating system to do a shut down and then turn off. Note that if the autoreboot_on attribute is set to true, the machine will come back up once the BigV brain detects it has gone off.
+
+**reset** is similar to pressing the reset button on a real machine - it will instantly reboot the machine. It's worth noting that the system restarts in the same process on the host machine, so any changes to the spec of a vitual machine which require a restart will not be applied using this. See the power section below for how to stop, start and reboot the machine.
+
 
 ## VM Creation
 
