@@ -75,6 +75,8 @@ It is initiated by using:
 
 ..and accepts the following parameters:
 
+Note that once this is complete, the machine will be in a powered on state, but it's autoreboot_on attribute will be set to false.
+
 * **distribution** - the name of a distribution - valid options can be found by using the GET /definitions call ([see the definitions page]](/api/definitions))
 
 * **root_password** - the root password the machine should have after re-imageing.
