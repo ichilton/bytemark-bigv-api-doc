@@ -4,12 +4,11 @@ title: 'Introduction'
 
 #General Notes & HTTP Response Codes
 
-Query string parameters will be ignored, except for the view=overview parameter. This embeds other related information into the response to save making HTTP calls. Note though that not all fields are necessarily included in overview mode.
+Query string parameters will be ignored, except for the view=overview parameter, on certain calls. This embeds other related information into the response to save making HTTP calls. Note though that not all fields are necessarily included in overview mode - i.e it's possible that you can get more data on the included records by making a specific API call for that resource.
 
-Sometimes you will be able to GET a resource, but will get a 403 if you try to PUT/POST/DELETE it without having appropriate
-permissions. If you cannot GET the resource, then GET/PUT/POST/DELETE will all return HTTP response code: 404.
+Sometimes you will be able to use GET on a resource, but will get a 403 if you try to PUT/POST/DELETE to it without having appropriate permissions. If you cannot use GET on the resource, then GET/PUT/POST/DELETE will all return HTTP response code: 404 Not Found.
 
-Requests for unknown resources return HTTP response code: 404.
+Requests for unknown resources return HTTP response code: 404 Not Found.
 
 Unexpected errors or server-side problems will return HTTP response code: 500.
 

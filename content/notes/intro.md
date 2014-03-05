@@ -4,7 +4,7 @@ title: 'Introduction'
 
 # Introduction
 
-The API is a RESTful and therefore the type of HTTP request determines the action:
+The API is RESTful and therefore the type of HTTP request determines the action:
 
  - GET - Read Data
  - POST - Create a new entry
@@ -13,9 +13,9 @@ The API is a RESTful and therefore the type of HTTP request determines the actio
 
 If you are using curl, you can specify the method with the -X parameter, eg: -X POST, -X PUT and -X DELETE.
 
-See the examples in each section for more information about this.
+See the examples in each section for examples of this.
 
-It's also worth noting that PUT effectively works like PATCH - it will only update the fields supplied instead of the whole record.
+It's also worth noting that PUT effectively works as PATCH - it will only update the fields supplied instead of the whole record.
 
 
 ## Data Format
@@ -26,6 +26,8 @@ The API uses the JSON data format.
 ## URL
 
 The endpoint (url) for the API is: https://uk0.bigv.io
+
+This relates to the first BigV cluster in Manchester. As further clusters are added (such as a cluster at the new YO26 data centre in York), this will either change to a common url, eg: api.bigv.io or the appropriate endpoint for each cluster will need to be used (uk0.bigv.io, uk1.bigv.io etc), but this will be updated when that becomes a reality.
 
 
 ## Accounts, Users, Privileges and Groups
