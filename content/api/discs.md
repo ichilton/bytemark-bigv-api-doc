@@ -19,7 +19,7 @@ Each storage grade is priced differently.
 
 The currently available storage grades are defined in the [definitions call](/api/definitions).
 
-The rules for what can be changed on a running vm are currently complex - the simple advice is to power down a machine before making changes to discs.
+The rules for what can be changed on a running vm are currently complex - the simple advice is to power down a machine before making changes to discs. In practise though, you can add a disc, update a disc etc on a running VM, but the changes will not be visible until it's restarted.
 
 Note that discs can not be changed while the VM they're assigned to is deleted.
 
@@ -33,11 +33,13 @@ Note that discs can not be changed while the VM they're assigned to is deleted.
 
 Replace ACC_ID with the account id or name, GROUP_ID with the group id or name (or "default" if you don't use groups!), VM_ID with the id of the virtual machine and ID with the disc id.
 
+For deleting discs, you currently need to supply a purge=true parameter, otherwise it will fail with a 500 error.
+
 
 ## Attributes
 
 * **id** - unique key (integer).
-* **label** - unix device label.
+* **label** - unix device label - this can be any string to identify the drive
 * **size** - size in bytes.
 * **virtual_machine_id** - id of the vm it's attached to.
 * **storage_pool** - location of the drive on BigV's storage servers (tails).
