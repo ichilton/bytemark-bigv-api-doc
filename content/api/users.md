@@ -32,6 +32,10 @@ ID should be replaced with a user id or username.
 * **authorized_keys** - SSH public key's
 * **password** - only used when creating (or updating) a user - it's not returned in when reading users
 
+Once created - username and email can not be updated - they will just be ignored in any PUT requests.
+
+Be careful with authorized_keys as it's just a string - when updating this field, ensure that existing keys are present when supplying an updated string.
+
 
 ## Authentication
 
