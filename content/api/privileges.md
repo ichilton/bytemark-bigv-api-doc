@@ -31,7 +31,7 @@ USER_ID should be replaced with a user id or username and ID with the privilege 
 
 * **id** - unique key (integer).
 * **username** - username this privilege is for.
-* **level** - the level of privilege (eg: account_admin). Todo: confirm other valid values
+* **level** - the level of privilege (see below).
 * **creating_username** - username of the user who created this user.
 * **yubikey_required** - boolean specifying whether a yubikey is required for access.
 * **yubikey_otp_max_age** - how long the yubikey value will be accepted for (in seconds).
@@ -42,6 +42,21 @@ One of the following:
 * **virtual_machine_id**
 * **group_id**
 * **account_id**
+
+The valid levels are:
+
+* cluster_su
+* cluster_admin
+* account_admin 
+* group_admin
+* vm_admin
+* vm_console
+
+Users can only create or modify privileges which have a lower level than themselves.
+
+i.e account_admin's (the default level users have on their account) can only create/modify group_admin, vm_admin and vm_console privileges, not their own or other account_admins. They would have to contact support for that.
+
+Once created, only yubikey_required, yubikey_otp_max_age and ip_restrictions can be updated.
 
 
 ## Examples
